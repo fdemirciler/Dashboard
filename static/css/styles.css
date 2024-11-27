@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#dashboard-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#table-container {
+  width: fit-content;
+  
+}
+
+#controls {
+  margin-bottom: 20px;
+}
+
+#dataTable {
+  width: min-content;
+  border-collapse: collapse;
+}
+
+#dataTable th, #dataTable td {
+  border: 1px solid #ddd;
+  padding: 4px;
+  text-align: left;
+}
+
+#dataTable th {
+  background-color: #f2f2f2;
+}
+
+#dataTable td:first-child {
+  width: calc(1cm + 3ch); /* Adjust based on the longest month name */
+}
+
+#dataTable td:last-child {
+  width: calc(1cm + 7ch); /* Adjust based on the largest expected number */
+}
+
+#chartContainer {
+  width: 60%;
+  height: 400px;
+  position: relative;
+  resize: both;
+  overflow: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.resizer {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: se-resize;
+}
